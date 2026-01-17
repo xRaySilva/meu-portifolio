@@ -80,8 +80,8 @@ header::after {
 }
 
 .profile-img {
-  width: 8rem;
-  height: 8rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
@@ -212,6 +212,51 @@ h1 {
   color: #9ca3af;
 }
 
+/* Projects Section */
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: rgba(23, 37, 84, 0.85); /* mesmo azul do Sobre Mim */
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: 1 por linha */
+  gap: 1.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #1e40af;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.project-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-5px);
+}
+
+.project-card video {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #93c5fd;
+}
+
+.video{
+  height: 10rem;
+}
+
+
 /* Education Section */
 .education-section {
   padding: 4rem 2rem;
@@ -341,6 +386,10 @@ footer {
     font-size: 1.125rem;
   }
 
+  .video{
+    height: 20rem;
+  }
+
   .subtitle {
     font-size: 1.875rem;
   }
@@ -351,6 +400,10 @@ footer {
 
   .contact-info {
     flex-direction: row;
+  }
+
+    .projects-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
